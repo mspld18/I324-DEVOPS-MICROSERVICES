@@ -1,6 +1,6 @@
-const { connectDb, initDb, seedDb, closeDb } = require('../src/config/database');
+const { connectDb, initDb, seedDb, closeDb } = require('../config/database');
 const request = require('supertest');
-const app = require('../src/app');
+const app = require('../app');
 
 beforeAll(async () => {
     await connectDb();
